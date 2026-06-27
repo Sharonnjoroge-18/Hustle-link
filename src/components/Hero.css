@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;1,700&display=swap');
+.hero {
+    position: relative;
+    min-height: 95vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    background-color:rgb(27, 67, 50) ;
+}
+
+.hero-pattern {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  opacity: 0.05;
+  pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin-left: 240px;
+}
+
+/* Badge */
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 11px 18px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 184, 77, .35);
+    background: rgba(255,184,77,.08);
+    color: #f6b44c;
+    font-family: Inter, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: .4px;
+    margin-bottom: 30px;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    background: #f6b44c;
+    border-radius: 50%;
+}
+
+/* Heading */
+
+.hero h1 {
+    font-family: Fraunces, serif;
+    color: #f5efe7;
+    font-size: 74px;
+    line-height: .95;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.accent {
+    color: #f4b04d;
+    font-style: italic;
+}
+
+/* Paragraph */
+
+.hero p {
+    color: #d3d9d3;
+    font-family: Inter, sans-serif;
+    font-size: 22px;
+    line-height: 1.75;
+    margin-bottom: 55px;
+    letter-spacing: .5px;
+}
+
+.hero p strong {
+    color: white;
+    font-weight: 600;
+    font-family: Fraunces, serif;;
+}
+
+/* Stats */
+
+.hero-stats {
+    display: flex;
+    gap: 45px;
+}
+
+.hero-stat h2 {
+
+    font-family: Fraunces, serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: rgb(255, 193, 102);
+    letter-spacing: -0.03em;
+    margin-bottom: 4px;
+}
+
+.hero-stat span {
+
+    color: #bfc9c2;
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+
+    .hero-content{
+        margin:120px 30px;
+    }
+
+    .hero h1{
+        font-size:52px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    .hero-stats{
+        flex-direction:column;
+        gap:25px;
+    }
+}
