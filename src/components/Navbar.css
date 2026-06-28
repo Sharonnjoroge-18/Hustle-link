@@ -1,0 +1,91 @@
+/* Navbar */
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    background: #f6f2e8;
+    border-bottom: 1px solid #ddd6c8;
+    z-index: 1000;
+}
+
+/* Logo */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    text-decoration: none;
+    font-family:"DM Serif Display", serif;
+    font-size:1.7rem;
+    font-weight:600;
+    color:#173f35;
+    cursor: pointer;
+}
+
+.logo-icon{
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    background:#173f35;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Navigation */
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:38px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#47515c;
+    font-family:Inter,sans-serif;
+    font-size:15px;
+    font-weight:500;
+    transition:.25s ease;
+}
+.nav-links li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a:hover{
+    color:#173f35;
+    text-decoration: underline;
+}
+.nav-links a.active{
+    color:#173f35;
+    text-decoration:underline;
+    font-weight:600;
+}
+
+/* Button */
+
+.register-btn{
+    background:#173f35;
+    color:white;
+    border:none;
+    border-radius:10px;
+    padding:12px 18px;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.25s;
+}
+
+.register-btn:hover{
+    background:#1d4d40;
+}

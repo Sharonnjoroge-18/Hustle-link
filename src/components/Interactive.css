@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Inter:wght@400;600&display=swap');
+
+/* ─── Section layout ────────────────────────────────────── */
+.demo {
+  background-color: #f0ece2;
+  padding: 80px 13%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 80px;
+  align-items: start;
+  font-family: 'Inter', Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* ─── Left column ───────────────────────────────────────── */
+.demo-eyebrow {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgb(201, 123, 10);
+  margin-bottom: 20px;
+}
+
+.demo-heading {
+  font-family: 'Fraunces', serif;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+  color: #1a2e1a;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.demo-intro {
+  font-size: 1.1rem;
+  color: #4a4a42;
+  line-height: 1.75;
+  margin: 0 0 32px 0;
+  max-width: 480px;
+}
+
+.demo-intro strong {
+  color: #1a2e1a;
+  font-weight: 700;
+}
+
+/* ─── Feature list ──────────────────────────────────────── */
+.demo-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 36px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.demo-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #1a3d2b;
+  color: #1a3d2b;
+  font-size: 13px;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.demo-feature strong {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a2e1a;
+  margin-bottom: 3px;
+}
+
+.demo-feature p {
+  font-size: 1rem;
+  color: #7a7a6e;
+  margin: 0;
+  line-height: 1.8;
+}
+
+/* ─── USSD flow tree ────────────────────────────────────── */
+.ussd-tree {
+  background-color: #1a3d2b;
+  border-radius: 12px;
+  padding: 24px 28px;
+  max-width: 520px;
+}
+
+.tree-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(140, 200, 160, 0.6);
+  margin: 0 0 14px 0;
+}
+
+.ussd-tree pre {
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  color: #5fd87a;
+  line-height: 1.8;
+  margin: 0;
+  white-space: pre;
+}
+
+/* ─── Right column ──────────────────────────────────────── */
+.demo-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ─── Phone shell ───────────────────────────────────────── */
+.phone {
+  background-color: #1c1c1e;
+  border-radius: 40px;
+  width: 240px;
+  height: 550px;
+  padding: 16px 16px 20px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.phone-notch {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+  font-size: 9px;
+  color: #aaa;
+  font-family: Arial, sans-serif;
+}
+
+.phone-battery {
+  color: #4cde6e;
+  font-weight: 600;
+}
+
+.phone-screen {
+  background-color: #0a1f0e;
+  border-radius: 10px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ussd-screen {
+  text-align: center;
+}
+
+.ussd-label {
+  font-size: 12px;
+  color: rgba(100, 200, 120, 0.7);
+  margin: 0 0 8px 0;
+  font-family: 'Courier New', monospace;
+}
+
+.ussd-code {
+  font-family: 'Courier New', monospace;
+  font-size: 1.3rem;
+  color: #5fd87a;
+  margin: 0;
+  font-weight: 700;
+}
+
+.phone-input-display {
+  background-color: #2a2a2c;
+  border-radius: 8px;
+  text-align: center;
+  padding: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #fff;
+  letter-spacing: 0.05em;
+}
+
+/* ─── Dialpad ───────────────────────────────────────────── */
+.dialpad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.dial-key {
+  background-color: #3a3a3c;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 12px 0;
+  cursor: pointer;
+  transition: background 0.15s;
+  font-family: Arial, sans-serif;
+}
+
+.dial-key:hover {
+  background-color: #4a4a4e;
+}
+
+.dial-key:active {
+  background-color: #5a5a5e;
+}
+
+/* ─── Phone action buttons ──────────────────────────────── */
+.phone-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 8px;
+}
+
+.action-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 11px 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: opacity 0.15s;
+}
+
+.action-btn:hover { opacity: 0.85; }
+
+.action-btn.backspace {
+  background-color: #3a3a3c;
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.action-btn.call {
+  background-color: #2e7d4f;
+  color: #fff;
+}
+
+.action-btn.end {
+  background-color: #8b1a1a;
+  color: #fff;
+}
+
+.phone-brand {
+  text-align: center;
+  font-size: 9px;
+  color: rgba(255,255,255,0.2);
+  margin: 0;
+  letter-spacing: 0.1em;
+  font-family: Arial, sans-serif;
+}
+
+/* ─── Try it card ───────────────────────────────────────── */
+.try-card {
+  margin-top: 25px;
+  background-color: #faf8f3;
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 12px;
+  padding: 20px 22px;
+  width: 240px;
+  box-sizing: border-box;
+}
+
+.try-card strong {
+  display: block;
+  font-size: 0.9rem;
+  color: #1a2e1a;
+  margin-bottom: 12px;
+  font-family: 'Fraunces', serif;
+}
+
+.try-card ol {
+  padding-left: 18px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.try-card li {
+  font-size: 0.8rem;
+  color: #5a5a52;
+  line-height: 1.5;
+}
+
+.try-card code {
+  background-color: #e8e4da;
+  color: #1a2e1a;
+  font-size: 0.78rem;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+/* ─── Responsive ────────────────────────────────────────── */
+@media (max-width: 900px) {
+  .demo {
+    grid-template-columns: 1fr;
+    padding: 48px 24px;
+    gap: 48px;
+  }
+
+  .demo-right {
+    align-items: flex-start;
+  }
+}
