@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import './FeaturedArtisans.css';
+import './Featuredartisans.css';
 import RegisterModal from './RegisterModal';
 
 const CATEGORIES = ['All', 'Plumber', 'Electrician', 'Tailor', 'Barber', 'Hairstylist', 'Makeup Artist', 'Carpenter'];
