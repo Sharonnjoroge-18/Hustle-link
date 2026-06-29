@@ -2,7 +2,7 @@ import Hero from "./components/Hero";
 import HowItWorks from "./components/HowItWorks";
 import InteractiveDemo from "./components/Interactive";
 import Navbar from "./components/Navbar";
-import FeaturedArtisans from "./components/FeaturedArtisans";
+import FeaturedArtisans from "./components/Featuredartisans";
 import Footer from "./components/Footer";
 import { useState } from "react";
 
