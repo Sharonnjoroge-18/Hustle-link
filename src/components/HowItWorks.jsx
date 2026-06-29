@@ -23,7 +23,7 @@ const steps = [
 
 function HowItWorks() {
   return (
-    <section className="hiw">
+    <section className="hiw" id='hiw'>
       <div className="hiw-header">
         <span className="hiw-eyebrow">SIMPLE BY DESIGN</span>
         <h2 className="hiw-heading">Three steps, zero data required</h2>

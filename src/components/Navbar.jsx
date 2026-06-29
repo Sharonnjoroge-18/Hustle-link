@@ -2,7 +2,7 @@ import "./Navbar.css";
 import { Phone } from "lucide-react";
 import {useState} from 'react';
 
-function Navbar() {
+function Navbar({ onRegisterClick }) {
   const [activeLink, setActiveLink]=useState("");
   const handleLinkClick =(link) => {
     setActiveLink(link);
@@ -24,14 +24,14 @@ function Navbar() {
         <li><a href="#demo" className={activeLink === '#demo' ? 'active' : ''} 
         onClick={() => handleLinkClick('#Interactive')}
         >Demo</a></li>
-        <li><a href="#" className={activeLink === '#Artisans' ? 'active' : ''} 
-        onClick={() => handleLinkClick('#Artisans')}
+        <li><a href="#artisans" className={activeLink === '#artisans' ? 'active' : ''} 
+        onClick={() => handleLinkClick('#artisans')}
         >Artisans</a></li>
         
         
       </ul>
 
-      <button className="register-btn">
+      <button className="register-btn" onClick={onRegisterClick}>
         ✨ Register as Artisan
       </button>
     </nav>

@@ -112,7 +112,7 @@ function Phone() {
 
 function InteractiveDemo() {
   return (
-    <section className="demo">
+    <section className="demo" id='demo'>
       <div className="demo-left">
         <span className="demo-eyebrow">INTERACTIVE DEMO</span>
         <h2 className="demo-heading">See it work, live</h2>
